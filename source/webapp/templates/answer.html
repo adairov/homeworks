@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answer</title>
+</head>
+
+<body>
+<h1>Calculation Answer</h1>
+{#{{ first_number }} {{ calc_method }} {{ second_number }} = ???#}
+{% if calc_method == "add" %}
+    <p>Result: {{ first_number }} + {{ second_number }} = {{ answer }}</p>
+{% elif calc_method == "subtract" %}
+    <p>Result: {{ first_number }} - {{ second_number }} = {{ answer }}</p>
+{% elif calc_method == "multiply" %}
+    <p>Result: {{ first_number }} * {{ second_number }} = {{ answer }}</p>
+{% else %}
+    <p>Result: {{ first_number }} / {{ second_number }} = {{ answer }}</p>
+{% endif %}
+</br>
+<a href = "">Return back</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<h1>Calculate</h1>
+
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div style="max-width: 300px; display: flex; justify-content: flex-end; margin-bottom: 15px">
+        <label style="margin-right: 10px">First number</label>
+        <input type="number" name="first_number"/>
+    </div>
+    <div  style="max-width: 300px; display: flex; justify-content: flex-end; margin-bottom: 15px">
+        <label style="margin-right: 10px">Second number</label>
+        <input type="number" name="second_number"/>
+    </div>
+    </br>
+
+    <div style="max-width: 300px; display: flex; align-items: center; flex-direction: column">
+        <div>
+        <input type="radio" id="calcChoice1"
+         name="calc_method" value="add">
+        <label for="contactChoice1">add</label></br>
+
+        <input type="radio" id="calcChoice2"
+         name="calc_method" value="subtract">
+        <label for="contactChoice2">subtract</label></br>
+
+        <input type="radio" id="calcChoice3"
+         name="calc_method" value="multiply">
+        <label for="contactChoice3">multiply</label></br>
+
+        <input type="radio" id="calcChoice4"
+         name="calc_method" value="divide">
+        <label for="contactChoice3">divide</label></br>
+      </div>
+      <div>
+        <br/>
+        <button type="submit">Calculate</button>
+      </div>
+    </div>
+
+</form>
+</body>
+</html>
